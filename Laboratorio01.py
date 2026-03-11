@@ -111,7 +111,7 @@ def sumatoria_V2(inicio, fin, distancia, excepcion):
         return "Error: El fin debe ser entero"
 
     if(isinstance(distancia, int)):
-        if(distancia > 10):
+        if(distancia < 0 or distancia > 10):
             return "Error: El parámetro distancia debe estar en 1 a 9"
     else:
         return "Error: El parametro distancia debe ser entero"
@@ -138,6 +138,7 @@ def sumatoria_V2_Aux(inicio, fin, distancia, excepcion):
         i += distancia
 
     return resultado
+
 
 
 
